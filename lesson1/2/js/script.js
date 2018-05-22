@@ -1,6 +1,6 @@
 window.onload = function () {
 	var num = +prompt('Введите длинное число (3 и более цифр):');
-	567//найдем количество цифр в числе
+	//найдем количество цифр в числе
 	var digitCount = Math.max(Math.floor(Math.log10(Math.abs(num))), 0) + 1;
 	console.log(digitCount);
 	var res = 1;
