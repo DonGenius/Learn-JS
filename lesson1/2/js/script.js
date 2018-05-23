@@ -3,6 +3,7 @@ window.onload = function () {
 	//найдем количество цифр в числе
 	var digitCount = Math.max(Math.floor(Math.log10(Math.abs(num))), 0) + 1;
 	console.log(digitCount);
+
 	var res = 1;
 
 	//перемножим все 
