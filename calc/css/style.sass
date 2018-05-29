@@ -1,0 +1,79 @@
+*
+	box-sizing: border-box
+
+body
+	color: #fff
+	font-family: 'Roboto', sans-serif
+
+.calc
+	margin: 50px auto
+	width: 600px
+	height: 1080px
+	background-color: #000
+	display: flex
+	flex-direction: column
+	.display
+		height: 30%
+		background-color: #000000
+		border: none
+		color: #ffffff
+		font-size: 95px
+		display: flex
+		justify-content: flex-end
+		align-items: flex-end
+		padding-bottom: 10px
+		padding-left: 20px
+		padding-right: 20px
+	.buttons
+		display: flex
+		button
+				width: 120px
+				height: 120px
+				color: #ffffff
+				border: none
+				outline-style: none
+				border-radius: 90px
+				margin-bottom: 20px
+				font-size: 65px
+				&:hover
+					cursor: pointer
+		&-left
+			width: 75%
+			flex-direction: row-reverse
+			padding-left: 20px
+			button
+				margin-right: 20px
+				background-color: #333333
+				&:hover
+					background-color: lighten(#333333, 10deg)
+				&:active
+					background-color: darken(#333333, 10deg)
+				&:nth-child(13)
+					width: 265px
+					text-align: left
+					padding-left: 45px
+				&:nth-child(-n+3)
+					background-color: #a6a6a6
+					color: #000000
+					font-size: 50px
+					&:hover
+						background-color: lighten(#a6a6a6, 10deg)
+					&:active
+						background-color: darken(#a6a6a6, 10deg)
+		&-right
+			display: flex
+			flex-direction: column
+			padding-left: 5px
+			button
+				background-color: #ff9501
+				&:nth-child(2)
+					font-size: 40px
+				&:hover
+					background-color: lighten(#ff9501, 10deg)
+				&:active
+					background-color: darken(#ff9501, 10deg)
+			
+				
+
+		
+
